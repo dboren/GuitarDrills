@@ -1,0 +1,9 @@
+User will set state variables via front-end inputs (either dropdowns or radio buttons)
+
+State determines what sort of tab they get
+
+
+Generating the tab
+    This is the hard part. I can't just generate text linearly because every point in time on the tab is multiple lines. Is there a way to generate a measure at a time?
+        Will start with generating something blank and then perhaps fret numbers can be swapped into "-" locations on some sort of coordinate basis.
+            Arrays within arrays?
