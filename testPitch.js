@@ -23,3 +23,16 @@ const Cs3 = {
 const E3 = {
     "coords" : [[0, 12], [1, 7], [1, 19], [2, 2]]
 }
+
+const EmajPent = {
+
+    "pitches" : [E2, Fs2, Gs2, B2, Cs3, E3]
+}
+
+//Do I want to hardcode each scale's pitch classes or use a lookup table of all pitch classes and program the steps and half steps to generate each scale's pitch class array as needed?
+
+function renderDrill(drillSelections) {
+
+    console.log("rendering drill")
+
+}
