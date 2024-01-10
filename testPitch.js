@@ -31,6 +31,10 @@ const EmajPent = {
 
 //Do I want to hardcode each scale's pitch classes or use a lookup table of all pitch classes and program the steps and half steps to generate each scale's pitch class array as needed?
 
+let drillSelections
+
+//Test state variables defined below
+
 let currModality = "none"
 let currKey = "E"
 let currDirection = "Ascending"
@@ -38,8 +42,19 @@ let currTimeSig = "3/4"
 let scaleType = "pentatonic"
 let position = 1
 
+let startPitch
+
 function renderDrill(drillSelections) {
 
     console.log("rendering drill")
 
+    console.log("currKey: " + currKey);
+    console.log("position: " + position);
+
+    const startPointer = currKey + (position + 1);
+
+    console.log("pointer: " + startPointer);
+
 }
+
+renderDrill();
