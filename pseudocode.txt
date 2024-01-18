@@ -7,3 +7,14 @@ Generating the tab
     This is the hard part. I can't just generate text linearly because every point in time on the tab is multiple lines. Is there a way to generate a measure at a time?
         Will start with generating something blank and then perhaps fret numbers can be swapped into "-" locations on some sort of coordinate basis.
             Arrays within arrays?
+            -Each guitar string on the tab is represented as an ascii string within a span.
+            -Selected key and position parameters (possibly others) determine starting pitch.
+                -Each pitch is a variable/object with a string coordinate and fret coordinate.
+                    -String coordinate points to a blank string span.
+                    -Index of first "-" in the span is replaced with the fret coordinate.
+            -Selected modality and direction (possibly others) parameters determine a step array.
+                -Using a loop to be run for each note in the drill, step array moves through array of all pitches on fretboard starting from the starting pitch.
+                        -May need to have both a sharps and a flats pitch array since those can be finnicky
+                    -For each note in the drill, the index of the string span to be modified (determined by note's string coordinate) moves up two from the previous note's index (leaves an empty space between each note for readability)
+                        -***Need to find a way to keep things idiomatic. Can coniditionals be used to make sure the most sensible position of a given pitch is used?***
+                    
