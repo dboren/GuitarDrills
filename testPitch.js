@@ -42,7 +42,18 @@ let currTimeSig = "3/4"
 let scaleType = "pentatonic"
 let position = 1
 
-let startPitch
+let startPitch = {}
+
+function changeStringToVariable(variable, value) {
+
+    console.log("converted pitch: " + variable)
+
+    console.log(window[variable]);
+
+    window[variable]=value
+
+    console.log("input pointer: " + value)
+    }
 
 function renderDrill(drillSelections) {
 
@@ -54,6 +65,22 @@ function renderDrill(drillSelections) {
     const startPointer = currKey + (position + 1);
 
     console.log("pointer: " + startPointer);
+
+    //need to convert start pointer into its equivalent pitch class object instead of a string?
+    //will this require a lookup table instead?
+
+    // console.info(startPointer);
+
+    // console.log(startPointer.coords);
+
+    // changeStringToVariable(startPitch, startPointer)
+
+
+    startPitch = eval(startPointer); //eval is a shortcut compared to making a lookup table but I need to look into whether it brings other risks/drawbacks
+
+    console.log(startPitch);
+
+    console.info(startPitch);
 
 }
 
