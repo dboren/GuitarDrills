@@ -9,7 +9,24 @@
 <body>
     <h1>Welcome to GuitarDrills!</h1>
     <h2>Select characteristics for your drill below</h2>
+    <!-- Do we need flat equivalents or just sharps, since guitar favors sharps? Don't want to clutter the dropdown too much but maybe there can be some logic that alters downstream functions if a flat equivalent key is preferable.-->
+    <label for="key">Key</label>
 
+    <select name="key" id="key">
+        <option value="e">E</option>
+        <option value="f">F</option>
+        <option value="f#">F#</option>
+        <option value="g">G</option>
+        <option value="g#">G#</option>
+        <option value="a">A</option>
+        <option value="a#">A#</option>
+        <option value="b">B</option>
+        <option value="c">C</option>
+        <option value="c#">C#</option>
+        <option value="d">D</option>
+        <option value="d#">D#</option>
+    </select>
+    <br>
     <button>Test</button>
 
     <script src="testPitch.js"></script>
