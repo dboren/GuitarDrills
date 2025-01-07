@@ -16,5 +16,5 @@ Generating the tab
                 -Using a loop to be run for each note in the drill, step array moves through array of all pitches on fretboard starting from the starting pitch.
                         -May need to have both a sharps and a flats pitch array since those can be finnicky
                     -For each note in the drill, the index of the string span to be modified (determined by note's string coordinate) moves up two from the previous note's index (leaves an empty space between each note for readability)
-                        -***Need to find a way to keep things idiomatic. Can coniditionals be used to make sure the most sensible position of a given pitch is used?***
+                        -***Need to find a way to keep things idiomatic. Can conditionals be used to make sure the most sensible position of a given pitch is used?***
                     
