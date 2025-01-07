@@ -62,7 +62,7 @@ function renderDrill(drillSelections) {
     console.log("currKey: " + currKey);
     console.log("position: " + position);
 
-    const startPointer = currKey + (position + 1);
+    const startPointer = currKey + (position + 1); //Need to look into whether this will work with pitches located on more than one fret
 
     console.log("pointer: " + startPointer);
 
